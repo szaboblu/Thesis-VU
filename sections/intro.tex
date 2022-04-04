@@ -1,0 +1,40 @@
+\section{Introduction}
+
+
+\subsection{Motivation}
+
+There are several navigational options available nowadays. We may use maps or GPS devices, but we must always be able to interpret instructions. In the transport area, shippers offer textual instructions for truck drivers on how to get to a retail location for store replenishment. Instructions are prepared for board computers to follow in order to travel to the shop along a predetermined path. Navigation-based and task-oriented conversation systems are commonly used to connect users to maps and navigation software \cite{williams2017hybrid}. There is need for a software which can interpret these directions to geo-locations and is also able to construct descriptions of defined routes. Current research focuses primarily on machine learning applications in this field, due to the interest it has generated and the potential solutions it may provide \cite{hashimoto2016joint}. However, other options must always be considered, primarily since these instructions are already highly standardised, though this varies between instruction set providers, and constructing a large training set could be difficult. Rule- based solutions must also be examined for the benefit of simplicity and the fact that they are already well established in the domain \cite{xu2021ontology}. In this research I am focusing on the development of a software for the need of this industry which can create geolocations from the description, instructions defined as last mile route from begin to end point, with natural language interpretation and is able to create descriptive text based on the defined last mile route as geo-locations.
+
+\subsection{Problem definition }
+
+This paper attempts to solve the problem which accures when trying to translate written direction instructions to machine undestandable format. The problem will be considered solved once a software is designed and tested which is able to recognise a basic set of direction instructions from text, which method should be based on a possible multilingual approach. Can construct a list of valid gps locations from it, and can translate these gps locations into textual instructions.  
+
+\subsection{Research questions  }
+
+The main focus of this thesis is on the design process of a possible software which fulfills the aformentioned cryteria and to answer the main research question of the thesis:  \\
+
+ \textbf{Which software components are needed to integrate natural language processing in the interpretation and generation of navigation instructions for truck drivers?  }\\
+
+ 
+To be able to answer the main research question, the following sub-questions first need to be answered: 
+\begin{itemize}
+    \item [] \textbf{Research question 1}: \textit{How can we develop a natural language interpretation software convert written navigational instructions into coordinates?} 
+    \begin{itemize}
+        \item Research Strategy 1: Design science research to develop an NLP model for navigational instructions interpretation into conceptual representation of the route. 
+        \item Research Strategy 2: Develop a model for mapping textual location references from conceptual representation of the route to GPS coordinates. \\
+ 
+    \end{itemize}
+    \item[] \textbf{Research question 2}: \textit{How can we develop a natural language generation software to convert a list of coordinates into textual navigational instructions?} 
+\begin{itemize}
+    \item Research Strategy: Design science research to develop an NLG model for navigational instructions. 
+ 
+\end{itemize}
+\end{itemize}
+\\
+
+To retrieve information about the feasibility of the solutions found during RQ 1 and 2, and answer the main research question an evaluation of the results will be conducted using a simulation and analytical measures. 
+
+
+\subsection{Scientific and practical contribution  }
+
+The present focus of research in the subject of automatic natural language acquisition for navigational instructions is mostly on the capabilities that may be used to the navigational aspects of developing autonomous robots \cite{chen2011learning}. This research aims to build on previous work by concentrating on human-machine interactions and developing software that combines NLP and NLG for a more comprehensive language acquisition mechanism. 
